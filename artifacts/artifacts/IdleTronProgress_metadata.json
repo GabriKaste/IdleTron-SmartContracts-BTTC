@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "totalCoins",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[10]",
+						"name": "producerAmounts",
+						"type": "uint256[10]"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[10]",
+						"name": "producerCosts",
+						"type": "uint256[10]"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[10]",
+						"name": "producerRevenues",
+						"type": "uint256[10]"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool[10]",
+						"name": "managerStatuses",
+						"type": "bool[10]"
+					}
+				],
+				"name": "UserProgressUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "loadProgress",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalCoins",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "coinsPerSecond",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[10]",
+						"name": "producerAmounts",
+						"type": "uint256[10]"
+					},
+					{
+						"internalType": "uint256[10]",
+						"name": "producerCosts",
+						"type": "uint256[10]"
+					},
+					{
+						"internalType": "uint256[10]",
+						"name": "producerRevenues",
+						"type": "uint256[10]"
+					},
+					{
+						"internalType": "bool[10]",
+						"name": "managerStatuses",
+						"type": "bool[10]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_totalCoins",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_coinsPerSecond",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[10]",
+						"name": "_producerAmounts",
+						"type": "uint256[10]"
+					},
+					{
+						"internalType": "uint256[10]",
+						"name": "_producerCosts",
+						"type": "uint256[10]"
+					},
+					{
+						"internalType": "uint256[10]",
+						"name": "_producerRevenues",
+						"type": "uint256[10]"
+					},
+					{
+						"internalType": "bool[10]",
+						"name": "_managerStatuses",
+						"type": "bool[10]"
+					}
+				],
+				"name": "saveProgress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "totalCoins",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "coinsPerSecond",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BTTC_loadsave.sol": "IdleTronProgress"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BTTC_loadsave.sol": {
+			"keccak256": "0xca370b36ddd2d5bbee2103eadb1cce460972c3a8abc3f538792026224bc16d21",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc4cd295dbefd945b47a54d7598cc64b61d8f9561ec437374f4c9ffa3a60b8a0",
+				"dweb:/ipfs/QmPCrd6vgq4MMYaSGTG58VxfuD2XNuPjMGHoDzrzkVux2J"
+			]
+		}
+	},
+	"version": 1
+}

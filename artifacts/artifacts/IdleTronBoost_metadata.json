@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "boostDuration",
+						"type": "uint256"
+					}
+				],
+				"name": "BoostActivated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "durationInSeconds",
+						"type": "uint256"
+					}
+				],
+				"name": "activateBoost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BTTC_store_time.sol": "IdleTronBoost"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BTTC_store_time.sol": {
+			"keccak256": "0x4f22c47f39b95e4db1f3f0f417442744ac4406b972aeaf920ffa3d25ad2350f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0dcc0010dd93a7a08d0e74085d74056083ae3b9879926308c35ddc28fdecd5f4",
+				"dweb:/ipfs/QmQRAzuWxGeQhDAnN3eT36cubrxsL6WRZ65VoneSifjp27"
+			]
+		}
+	},
+	"version": 1
+}
